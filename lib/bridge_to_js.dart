@@ -1,5 +1,6 @@
-import 'dart:js' as js;
+library test;
 
-void callJsCode() {
-  js.context.callMethod('jsFunction');
-}
+import 'package:js/js.dart';
+
+@JS('jsFunction')
+external void callJsFunction();
